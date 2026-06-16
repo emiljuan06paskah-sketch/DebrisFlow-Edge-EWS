@@ -1,0 +1,21 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DebrisFlowDashboard_Alprog.FaceVerificationPage"
+             BackgroundColor="#F3F4F6">
+
+    <VerticalStackLayout Spacing="15" Padding="30" HorizontalOptions="Center" VerticalOptions="Center">
+
+        <Label x:Name="LabelRole" Text="Verifikasi: -" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" TextColor="#1F2937"/>
+        <Label Text="Sistem Pencocokan Matriks Piksel C#" FontSize="14" HorizontalOptions="Center" TextColor="#4B5563"/>
+
+        <Frame CornerRadius="10" Padding="0" IsClippedToBounds="True" BackgroundColor="LightGray" HeightRequest="300" WidthRequest="400">
+            <Image x:Name="CameraPreview" Aspect="AspectFill" />
+        </Frame>
+
+        <Button Text="VERIFIKASI WAJAH SAYA" FontAttributes="Bold" BackgroundColor="#10B981" TextColor="White" CornerRadius="8" Clicked="OnVerifyClicked" />
+
+        <Button x:Name="BtnLanjut" Text="AKSES DITERIMA - MASUK DASHBOARD" IsVisible="False" FontAttributes="Bold" BackgroundColor="#2563EB" TextColor="White" CornerRadius="8" Clicked="OnNextClicked" />
+        <Button Text="Kembali ke Login" BackgroundColor="Transparent" TextColor="#EF4444" Clicked="OnCancelClicked" />
+
+    </VerticalStackLayout>
+</ContentPage>

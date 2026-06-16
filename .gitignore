@@ -1,0 +1,12 @@
+# Mengabaikan folder build bawaan Visual Studio
+[Bb]in/
+[Oo]bj/
+.vs/
+*.user
+
+# Mengabaikan file database SQLite lokal dan file gambar wajah
+*.db
+*.db3
+*.sqlite
+*.sqlite3
+*_face.png

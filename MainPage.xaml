@@ -1,0 +1,36 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DebrisFlowDashboard_Alprog.MainPage">
+
+    <Grid>
+
+        <Image Source="https://images.unsplash.com/photo-1545184180-25d471df75bd?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1920&amp;q=80" 
+               Aspect="AspectFill" />
+
+        <BoxView Color="Black" Opacity="0.5" />
+
+        <Frame BackgroundColor="#FFFFFF" 
+               CornerRadius="15" 
+               Padding="40" 
+               HasShadow="True"
+               HorizontalOptions="Center" 
+               VerticalOptions="Center" 
+               WidthRequest="400">
+
+            <VerticalStackLayout Spacing="20">
+
+                <Label Text="Debris Flow EWS" FontSize="32" FontAttributes="Bold" HorizontalOptions="Center" TextColor="#1F2937" />
+                <Label Text="Portal Akses Sistem" FontSize="16" HorizontalOptions="Center" TextColor="#4B5563" Margin="0,0,0,10"/>
+
+                <Entry x:Name="EntryUsername" Placeholder="Masukkan Username" BackgroundColor="#F3F4F6" TextColor="Black" />
+                <Entry x:Name="EntryPassword" Placeholder="Masukkan Password" IsPassword="True" BackgroundColor="#F3F4F6" TextColor="Black" />
+
+                <Button Text="MASUK SISTEM" FontAttributes="Bold" BackgroundColor="#2563EB" TextColor="White" CornerRadius="8" Clicked="OnLoginClicked" />
+
+                <Button Text="Belum punya akun? Daftar di sini" BackgroundColor="Transparent" TextColor="#2563EB" Clicked="OnGoToRegisterClicked" />
+
+            </VerticalStackLayout>
+        </Frame>
+
+    </Grid>
+</ContentPage>
